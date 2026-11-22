@@ -1,0 +1,15 @@
+{
+  "name": "xleader-cwi",
+  "owner": { "name": "XLeaders" },
+  "metadata": {
+    "description": "Chat With Insight — hỏi dữ liệu và dựng báo cáo trên insight.xteam.edu.vn"
+  },
+  "plugins": [
+    {
+      "name": "xleader-cwi",
+      "version": "0.4.0",
+      "source": "./plugin",
+      "description": "Hỏi dữ liệu kinh doanh XLeaders bằng tiếng Việt và tự dựng dashboard riêng trên insight."
+    }
+  ]
+}

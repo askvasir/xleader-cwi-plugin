@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "insight": {
+      "type": "http",
+      "url": "https://insight.xteam.edu.vn/api/metabase-mcp"
+    }
+  }
+}
