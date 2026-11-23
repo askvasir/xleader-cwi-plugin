@@ -16,6 +16,8 @@ insight thì không có số nào cả.
 
 ## Cài đặt (khoảng 3 phút, làm một lần)
 
+> Ảnh chụp chỉ để minh hoạ: số phiên bản (Version) trong ảnh có thể khác bản bạn đang cài.
+
 Các bước dưới đây làm y hệt nhau trên app Claude (máy tính) và trên claude.ai.
 
 ### Bước 1. Mở trang Plugins → Add → Add marketplace
@@ -49,12 +51,9 @@ Sau khi Sync, Claude hiện danh sách plugin của marketplace vừa thêm. B�
 ### Bước 5. Bấm "Finish setup" để kết nối insight
 
 Vẫn ở trang plugin **Xleader cwi**: mục **Connectors** có dòng **insight** ghi *Not connected*. Bấm nút
-**Finish setup** ở góc trên bên phải (hoặc bấm **Connect** trên dòng **insight**).
+**Finish setup** ở góc trên bên phải.
 
 ![Trang plugin Xleader cwi, dòng insight chưa kết nối, nút Finish setup](img/05-finish-setup.png)
-
-> Nếu bấm **Connect** mà Claude mở hộp **Add custom connector** đã điền sẵn tên `insight` và địa chỉ
-> `https://insight.xteam.edu.vn/api/mcp`: bấm **Continue**, giữ nguyên các lựa chọn, bấm **Add**.
 
 ### Bước 6. Đăng nhập insight (nếu được hỏi) và bấm Authorize
 
@@ -93,8 +92,8 @@ updates**. Góc dưới hiện *"Updated to …"* là xong. Nếu có dòng *"1 
 
 ![Menu Check for updates và Sync automatically](img/11-check-for-updates.png)
 
-Công tắc **Sync automatically** đang bật thì Claude sẽ tự đồng bộ khi repo có bản mới, nhưng thời điểm đồng bộ
-do Claude quyết định. Khi đội kỹ thuật báo có bản mới, cứ bấm **Check for updates** cho chắc.
+Công tắc **Sync automatically** có sẵn trong Claude nhưng **hiện chưa tự kéo bản mới về được** (đo nhiều lần ngày
+23/11/2026). Vì vậy mỗi khi đội kỹ thuật báo có bản mới, hãy bấm **Check for updates** như trên.
 
 ## Dùng thế nào
 
@@ -110,11 +109,11 @@ Mỗi câu trả lời đều kèm dòng **"Cách tính:"** để bạn biết c
 
 | Hiện tượng | Cách xử lý |
 |---|---|
-| `/start` báo chưa kết nối insight | Làm lại bước 5–6. |
+| `/start` báo chưa kết nối insight | Làm lại bước 5–6. Nếu dòng **insight** đã ghi *Connected* mà vẫn lỗi: bấm vào dòng **insight** → **…** → ngắt kết nối (Disconnect), rồi bấm **Finish setup** kết nối lại. |
 | Thông báo *"Couldn't register with … sign-in service"* | Plugin đang là bản cũ. Làm mục **Cập nhật lên bản mới**, rồi bấm **Finish setup** lại. |
 | Trang **Sign in to Metabase** báo sai mật khẩu | Đây là mật khẩu tài khoản insight, không phải mật khẩu Claude. Nhờ người quản trị insight đặt lại mật khẩu. |
 | Bước 3 báo trùng tên marketplace | Máy còn bản cài thử cũ: **Add → Manage marketplaces → …** cạnh dòng cũ → **Remove**, rồi làm lại từ bước 1. |
-| Có hai dòng kết nối insight (vd một dòng tự thêm trước đây tên "xleader insight") | Gỡ dòng tự thêm ở **Customize → Plugins**, chỉ giữ dòng **insight** trong plugin, để khỏi đăng nhập hai lần. |
+| Có hai dòng kết nối insight (vd một dòng tự thêm trước đây tên "xleader insight") | Ở trang **Plugins**, bấm bộ lọc **Connectors**, mở dòng tự thêm (ghi *Custom connector*) → **…** → **Remove**. Chỉ giữ dòng **insight** trong plugin, để khỏi đăng nhập hai lần. |
 
 ## Dành cho agent tự cài (vd Claude điều khiển trình duyệt)
 
@@ -146,7 +145,8 @@ Kiểm phiên bản: trang plugin **Xleader cwi** → cột phải **Version** p
 /mcp
 ```
 
-Trong màn hình `/mcp`, chọn dòng `insight` → **Authenticate** → đăng nhập insight → **Authorize**. Bật
+Trong màn hình `/mcp`, chọn dòng `insight` → **Authenticate** → đăng nhập insight → **Authorize**. Sau mỗi lần cập
+nhật plugin, nếu Claude báo `insight` chưa xác thực thì làm lại `/mcp` → `insight` → **Authenticate**. Bật
 **auto update** cho marketplace `xleader-cwi` trong màn hình `/plugin`.
 
 ## An toàn

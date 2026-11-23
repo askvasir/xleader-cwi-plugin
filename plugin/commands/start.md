@@ -33,7 +33,8 @@ Chạy quy trình sau bằng **tiếng Việt thân thiện, không dùng thuậ
 có lệnh đó, hướng dẫn sai làm họ bế tắc. Nói đúng một lần, ngắn, rồi dừng:
 
 > *"Em chưa nối được vào insight ạ. Anh/chị mở **Customize → Plugins**, chọn **Xleader cwi**; ở mục
-> **Connectors** có dòng **insight**: bấm **Finish setup** ở góc trên (hoặc **Connect** trên dòng đó), đăng nhập bằng đúng tài khoản
+> **Connectors** có dòng **insight**: bấm **Finish setup** ở góc trên (đã ghi *Connected* mà vẫn lỗi thì mở dòng đó → **…** → ngắt kết nối rồi
+> **Finish setup** lại), đăng nhập bằng đúng tài khoản
 > insight anh/chị vẫn dùng. Xong quay lại đây gõ `/start` giúp em."*
 
 Kết nối insight đi kèm sẵn trong plugin — người dùng **không** cần tự thêm "custom connector", cũng không

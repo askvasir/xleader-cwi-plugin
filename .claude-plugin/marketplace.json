@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "xleader-cwi",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "source": "./plugin",
       "description": "Hỏi dữ liệu kinh doanh XLeaders bằng tiếng Việt và tự dựng dashboard riêng trên insight."
     }
