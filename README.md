@@ -11,11 +11,13 @@ insight thì không có số nào cả.
 
 Làm trên app Claude (máy tính) hoặc trên claude.ai, cùng một tài khoản là được.
 
-1. Mở **Customize → Plugins**, bấm **Add** → **Add marketplace**, dán đúng dòng sau rồi bấm thêm:
+1. Mở **Customize → Plugins**, bấm **Add** → **Add marketplace** → **Add from a repository**, dán đúng dòng sau
+   vào ô URL, để nguyên công tắc **Sync automatically** đang bật, rồi bấm **Sync**:
    ```
    askvasir/xleader-cwi-plugin
    ```
-2. Trong danh sách plugin vừa hiện, chọn **Xleader cwi** và bấm cài (**Install**).
+2. Trong danh sách vừa hiện, chọn **Xleader cwi** rồi bấm **Add**. Claude tự mở trang đăng nhập insight: đăng
+   nhập bằng tài khoản insight bạn vẫn dùng rồi bấm đồng ý.
 3. Bật tự cập nhật: bấm **Add** → **Manage marketplaces**, bấm **…** cạnh dòng **xleader-cwi**, bật
    **Sync automatically**. Từ đó bản mới tự về máy, bạn không phải làm gì thêm.
 4. Mở trang plugin **Xleader cwi**. Ở mục **Connectors** có dòng **Metabase**: bấm **Connect**, đăng nhập bằng
