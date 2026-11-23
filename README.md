@@ -16,12 +16,11 @@ Làm trên app Claude (máy tính) hoặc trên claude.ai, cùng một tài kho�
    ```
    askvasir/xleader-cwi-plugin
    ```
-2. Trong danh sách vừa hiện, chọn **Xleader cwi** rồi bấm **Add**. Claude tự mở trang đăng nhập insight: đăng
-   nhập bằng tài khoản insight bạn vẫn dùng rồi bấm đồng ý.
-3. Bật tự cập nhật: bấm **Add** → **Manage marketplaces**, bấm **…** cạnh dòng **xleader-cwi**, bật
-   **Sync automatically**. Từ đó bản mới tự về máy, bạn không phải làm gì thêm.
-4. Mở trang plugin **Xleader cwi**. Ở mục **Connectors** có dòng **Metabase**: bấm **Connect**, đăng nhập bằng
-   tài khoản insight bạn vẫn dùng, rồi bấm đồng ý.
+2. Trong danh sách vừa hiện, chọn **Xleader cwi** rồi bấm **Add**.
+3. Vẫn ở trang plugin **Xleader cwi**, mục **Connectors** có dòng **insight**: bấm **Connect** → **Continue** →
+   **Add** (giữ nguyên các lựa chọn Claude điền sẵn). Claude mở trang đăng nhập insight: đăng nhập bằng tài khoản
+   insight bạn vẫn dùng rồi bấm đồng ý.
+4. Từ đây bản mới tự về máy (công tắc **Sync automatically** ở bước 1 lo việc này), bạn không phải làm gì thêm.
 5. Mở một cuộc chat mới, gõ `/start`. Thấy hai dấu ✅ là xong.
 
 Bạn **không** cần tài khoản GitHub, và cũng **không** cần tự thêm "custom connector": kết nối insight đi kèm
@@ -58,9 +57,9 @@ Mỗi câu trả lời đều kèm dòng **"Cách tính:"** để bạn biết c
 
 ## Gặp trục trặc
 
-- `/start` báo chưa kết nối: làm lại bước 4.
+- `/start` báo chưa kết nối: làm lại bước 3.
 - Bước 1 báo trùng tên **xleader-cwi**: máy bạn còn bản cài thử cũ. Vào **Add → Manage marketplaces**, bấm **…**
   cạnh **xleader-cwi** → **Remove**, rồi làm lại từ bước 1.
 - Trước đây bạn từng tự thêm một connector trỏ tới insight (vd tên "xleader insight"): gỡ nó đi ở
-  **Customize → Plugins**, chỉ giữ dòng **Metabase** trong plugin, để khỏi phải đăng nhập hai lần.
+  **Customize → Plugins**, chỉ giữ dòng **insight** trong plugin, để khỏi phải đăng nhập hai lần.
 - Muốn cập nhật ngay, không chờ: **Add → Manage marketplaces → … → Check for updates**.
